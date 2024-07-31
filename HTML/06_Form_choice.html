@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/login.php">
+            <!-- combo box -->
+            <p>
+                <h2>계절</h2>
+                <select name="season">
+                    <option value="spring">봄</option>
+                    <option value="summer">여름</option>
+                    <option value="fall">가을</option>
+                    <option value="winter">겨울</option>
+                </select>
+            </p>
+            <p>
+                <h2>계절 (다중선택)</h2>
+                <select name="season2" multiple>
+                    <option value="spring">봄</option>
+                    <option value="summer">여름</option>
+                    <option value="fall">가을</option>
+                    <option value="winter">겨울</option>
+                </select>
+            </p>
+
+            <!-- radio button -->
+             <p>
+                <h2>계절</h2>
+                <input type="radio" name="season" value="spring" checked> 봄 <br>
+                <input type="radio" name="season" value="summer"> 여름 <br>
+                <input type="radio" name="season" value="fall"> 가을 <br>
+                <input type="radio" name="season" value="winter"> 겨울 <br>
+             </p>
+             <p>
+                <h2>시간</h2>
+                <input type="radio" name="time" value="day" checked> 낮 <br>
+                <input type="radio" name="time" value="night"> 밤 <br>
+             </p>
+
+            <!-- check box -->
+            <p>
+                <h2>계절 (다중선택)</h2>
+                <input type="checkbox" name="season" value="spring"> 봄 <br>
+                <input type="checkbox" name="season" value="summer"> 여름 <br>
+                <input type="checkbox" name="season" value="fall"> 가을 <br>
+                <input type="checkbox" name="season" value="winter"> 겨울 <br>
+             </p>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
