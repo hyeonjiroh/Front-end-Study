@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+            }
+            footer{
+                border-top: 1px solid gray;
+                padding: 20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+            .content nav{
+                border-right: 1px solid gray;
+            }
+            .content aside{
+                border-left: 1px solid gray;
+            }
+            @media(max-width:500px){
+                .content{
+                    flex-direction: column;
+                }
+                .content nav, .content aside{
+                    border: none;
+                    flex-basis: auto;
+                }
+                /* 우선순위 main -> nav -> aside */
+                main{
+                    order: 0;
+                }
+                nav{
+                    order: 1;
+                }
+                aside{
+                    order: 2;
+                    display: none; /*광고 삭제*/
+                }
+            }
+            nav, aside{
+                flex-basis: 150px;
+                flex-shrink: 0;
+            }
+            aside{
+                padding-top: 35px;
+                text-align: center;
+            }
+            main{
+                padding: 10px;
+            }
+        </style>
+   </head>
+   <body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quas repudiandae quia modi voluptatibus voluptatum enim, quo necessitatibus nam corporis, odit sit nesciunt illo. Maxime voluptatibus voluptas sunt, placeat enim inventore rem nulla! Nesciunt ipsa excepturi perspiciatis error tenetur quis ullam obcaecati iusto, voluptate doloribus labore facilis expedita numquam officiis consequatur vitae neque nam molestias! Asperiores obcaecati sit, similique ducimus autem qui voluptas voluptatem ad in itaque reprehenderit molestiae quos soluta minus impedit doloremque eius provident assumenda nihil. Facere dolor eius impedit possimus ullam dicta, labore voluptatum voluptate dignissimos consequuntur recusandae necessitatibus at fuga obcaecati facilis laboriosam porro alias nisi. Neque, iusto tempora? Quo enim asperiores soluta necessitatibus at sunt placeat ratione quis, harum, sapiente itaque ab animi nemo minus reprehenderit ad. Quos laudantium ut autem eius saepe minima ullam, laborum dolor inventore natus expedita sit corporis veniam ad tenetur praesentium eum optio, libero accusamus aperiam officia assumenda deserunt nostrum consequatur. Possimus autem id eos veritatis magni accusantium quibusdam dicta, temporibus dolorum sed blanditiis. Obcaecati, laboriosam quam optio quos eaque, magni beatae vel ducimus, incidunt laudantium nemo porro amet voluptate similique ex impedit perspiciatis deserunt accusamus quasi tenetur dignissimos iusto nihil maxime pariatur? Corporis odio sit quam molestias quis minima consequatur obcaecati ipsa veniam est, asperiores vel eveniet dolore officiis illum impedit nulla dolor atque totam tempore, aperiam fugiat iste a earum. Ab iure perspiciatis eius quo ducimus? Atque quidem nemo quos sit possimus dolorem laudantium nisi sunt laborum? Illo tempore, pariatur obcaecati totam nam repudiandae libero perspiciatis tempora omnis possimus blanditiis sed voluptate vero quae atque explicabo, dolore assumenda commodi provident neque voluptates! Quibusdam eaque vitae et suscipit maxime ipsa facilis autem. Tempora officiis dignissimos quia repellendus commodi! Esse vitae voluptas eaque consequatur provident ad! Porro ut quae labore excepturi, laboriosam sunt modi cumque architecto natus in! Reiciendis, impedit? Fugiat quo quis tempora consequuntur quisquam hic omnis aperiam provident nulla sit a dignissimos, numquam laudantium distinctio commodi iste possimus veniam eum. Nesciunt sunt magnam totam quae nihil laudantium eaque? Aspernatur enim voluptate officiis numquam quisquam dolorem ex doloremque aperiam, soluta officia cum, iure commodi dolor. Ullam omnis expedita, laboriosam deserunt voluptates a delectus, alias necessitatibus deleniti quisquam nemo aperiam perferendis. Cumque odio perferendis consectetur ullam enim aliquid quidem, assumenda pariatur voluptas deleniti in ipsum delectus accusantium numquam harum sapiente quisquam incidunt explicabo dolores dolorum labore fuga? Sint aut, eius totam recusandae possimus error corporis facere, fugiat, minima quisquam in nulla atque cupiditate id quis excepturi at accusantium cumque eos eaque laboriosam! Nulla quia consectetur sequi quibusdam ut cum voluptatem quidem accusamus animi tempora corporis dolorum ex id rem quas numquam nisi alias ipsa sapiente similique, illum, culpa dolore laborum! Voluptatem temporibus vero neque architecto, non eaque exercitationem distinctio culpa deserunt rerum explicabo eius laborum nobis quo ad a itaque sit molestiae facilis consequatur qui, dolorem ex autem pariatur! Quod placeat nostrum repellendus quibusdam omnis explicabo natus totam facilis. Consequatur a placeat nostrum impedit molestiae! Dolorum sunt laborum doloribus magnam nostrum quibusdam. Dolor tenetur error at id quia harum illum ab maiores debitis cupiditate repellendus aut ipsum fugit commodi placeat itaque, beatae vero nesciunt earum natus dolorum voluptas laboriosam. Suscipit, autem. Consequatur tempore doloremque perspiciatis, reprehenderit reiciendis quos amet inventore distinctio, placeat, totam eius itaque dolorum non ipsum sit ratione qui exercitationem mollitia. Eligendi exercitationem molestiae distinctio fuga hic id laborum sint ad voluptate atque nihil qui repudiandae eos voluptatibus asperiores, expedita eius vitae architecto corporis rerum possimus aspernatur consectetur, esse deleniti! Minus neque ad laboriosam, modi voluptatibus dignissimos deserunt molestias itaque nesciunt qui, quidem est sequi fugiat doloremque et magnam earum error. Totam eligendi maxime aliquam molestias cumque quasi non modi, temporibus praesentium tempore unde, consequatur exercitationem doloribus? Accusantium, deleniti? Facilis ab nulla fugiat dolores consequatur voluptatum necessitatibus quaerat fugit ut iure a, sed voluptates distinctio delectus inventore. Eos explicabo ad officiis. Pariatur natus aut eligendi dicta iure numquam illum non fugit, placeat quia facilis culpa, hic incidunt dignissimos aspernatur totam, reiciendis ullam sunt repellat obcaecati vitae! Molestias voluptas ipsum modi ad aspernatur, a repudiandae quis beatae corporis aut. Quidem, ab architecto. Minus esse doloribus quas culpa vel tempore deleniti quidem nobis placeat ad accusamus, ex repudiandae aliquid dolorem hic sed pariatur assumenda, facere distinctio numquam laudantium. Porro distinctio quasi quas dolorum quos impedit sint sunt, inventore ex voluptatum cumque iusto quam. Rem mollitia libero voluptatibus, similique doloremque incidunt quas itaque quis minus ipsam voluptatum sunt sed, nobis illo. Sequi qui molestiae pariatur soluta, est illum, odit in iste provident eaque expedita quis rem vitae sapiente, eum esse. Quo, fugiat ab, similique expedita optio nostrum aspernatur repudiandae exercitationem voluptate illo a deleniti! Sed molestias, dolorem accusamus vero nisi saepe ex placeat veniam similique odit repellendus ad expedita quae autem quo beatae laboriosam sequi. Reprehenderit autem in deserunt consequatur deleniti, voluptatibus unde praesentium accusantium, laboriosam modi dolor accusamus molestiae facilis quos ipsa delectus quis pariatur numquam omnis explicabo illo nostrum nihil. Deserunt, optio nemo quos repudiandae quod unde. Fugiat voluptas corporis quam voluptates nam molestiae omnis eum laborum soluta aspernatur non tempora sint, ab quaerat animi optio dolores sed. Doloribus laborum consectetur id corrupti corporis alias velit. Placeat, sequi vero voluptatibus eius iste beatae porro itaque nemo sapiente, odio architecto nam illum error in qui saepe deserunt! Quo necessitatibus doloribus veritatis nam iste blanditiis maxime dolore suscipit aspernatur aliquid illo aut expedita deserunt ex non consectetur odio vitae, odit atque nulla architecto vel a molestiae amet? Debitis maxime nihil minima doloremque saepe quod et. Explicabo eius doloremque provident obcaecati ipsa ullam distinctio ratione, voluptatibus, velit molestias voluptate deleniti vel quibusdam itaque. Voluptas molestiae nihil placeat facere incidunt ut! Repellat vel quibusdam doloribus repellendus odio, minima hic expedita animi non, fugiat asperiores consequatur quia neque culpa numquam. Repudiandae accusamus similique hic unde nihil, vero facere architecto expedita maxime rem tempora error porro numquam dolores quasi quia perspiciatis nemo magni enim dignissimos sit! Corrupti debitis iusto voluptas expedita veritatis quisquam numquam enim. Molestias ducimus pariatur laborum tempore maxime quis, minima quia. Temporibus laborum nobis earum similique voluptatum quis totam. Sunt, magnam eum.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+   </body>
+</html>
