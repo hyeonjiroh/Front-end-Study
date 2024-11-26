@@ -1,0 +1,7 @@
+h1{
+    color: #7982fb;
+}
+h1:hover{
+    color: #a679fb;
+    transition: all 1s;
+}
